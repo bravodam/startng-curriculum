@@ -206,6 +206,88 @@
         .course-drop {
             padding-bottom: 40px;
         }
+
+        .bgcolor{
+            background-color: #44CF6C;
+            color: #fff;
+
+        }
+        table.a {
+            margin: auto;
+        }
+
+        .table {
+          width: 70%;
+        }
+
+       .flexy {
+        display: flex;
+        justify-content:space-between;
+       }
+
+       .learn-btn-div {
+        width: 30%;
+        margin: 0 auto;
+        padding: 0.3em;
+        text-align: right;
+       }
+
+       #learn-btn {
+        border-radius: 10px;
+        color: #44CF6C;
+        background: #FFFFFF;
+        font-size: 16px;
+        line-height: 22px;
+        line-height: 22px;
+        width: 60%;
+        padding: 0.3em;
+        letter-spacing: 0.655606px;
+       }
+
+       .green-bg {
+         background:rgba(7, 101, 34, 0.82);
+         padding: 2em 2.5em;
+       }
+
+       .exp {
+         text-align: justify;
+        font-size: 20px;
+       }
+
+       @media screen and (max-width: 768px) {
+         .learn-btn-div {
+           text-align: center;
+         }
+         #learn-btn {
+           width: 100%;
+         }
+       }
+
+       @media screen and (max-width: 575px) {
+         .change {
+           display: block !important
+         }
+         .img {
+           margin-bottom: 1em;
+         }
+       }
+
+       @media screen and (max-width: 500px) {
+         .flexy {
+           display: block;
+         }
+
+         .learn-btn-div {
+           width: 80%;
+           text-align: center;
+         }
+         #learn-btn {
+           width: 80%;
+         }
+         .table {
+           width: 100%;
+         }
+       }
     </style>
 </head>
 
@@ -250,12 +332,14 @@
 
     <div class="container mt-5 mb-5 pt-5 pb-5">
         <div class="row align-items-center">
-            <div class="col-md-6">
-              <img class="img-fluid" src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570975785/startng/image_2_nbexxk.png">
-            </div>
-            <div class="col-md-6">
-                <h4 class="font-weight-bold">Learn Anywhere, Anytime, With Other Creatives</h4>
-                <p>The HNG internship is a 3-month remote <br> internship designed to find and develop the <br> most talented software developers. Everyone is <br> welcome to participate (there is no entrance <br> exam). </p>
+            <div class="change" style="display: flex">
+              <div class="col-md-6 img">
+                <img class="img-fluid" src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570975785/startng/image_2_nbexxk.png">
+              </div>
+              <div class="col-md-6">
+                  <h4 class="font-weight-bold">Learn Anywhere, Anytime, With Other Creatives</h4>
+                  <p class="exp">The HNG internship is a 3-month remote <br> internship designed to find and develop the <br> most talented software developers. Everyone is <br> welcome to participate (there is no entrance <br> exam). </p>
+              </div>
             </div>
         </div>
     </div>
@@ -276,24 +360,21 @@
             <div class="col-md-2">
                 <p>Digital Marketing</p>
             </div>
-            <div class="col-md-2" style="text-align: right">
+            <div class="col-md-2">
                 <p>Brand...></p>
             </div>
         </div>
-        <div class="container" style="background:rgba(7, 101, 34, 0.82); padding: 2em 2.5em;">
+        <div class="container green-bg">
           <div class="row">
             <div class="col-md-12" style="margin-bottom: 0.5em">
               <h4>Full Stack Development Curriculum</h4>
             </div>
-            <div style="display: flex; justify-content:space-between">
-              <!-- <div style="width: 65%; background-color: red; padding: 0.3em"> -->
+            <div class="flexy">
               <div class="col-md-8">
                 <p>The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers.</p>
               </div>
-              <!-- <div style="width: 30%; background-color: blue; margin: 0 auto; padding: 0.3em; text-align: center;"> -->
-              <div class="col-md-4" style="width: 30%; margin: 0 auto; padding: 0.3em; text-align: right;">
-                <input type="submit" value="Start Learning" style="border-radius: 10px;color: #44CF6C;background: #FFFFFF;font-size: 16px;
-                line-height: 22px;line-height: 22px; width: 60%; padding: 0.3em; letter-spacing: 0.655606px;">
+              <div class="col-md-4 learn-btn-div">
+                <input type="submit" id="learn-btn" value="Start Learning">
               </div>
             </div>
           </div>
@@ -479,7 +560,6 @@
                             </div>
 
                         </div>
-                        <!-- panel-group -->
 
                     </div>
 
@@ -668,7 +748,6 @@
 
 
                         </div>
-                        <!-- panel-group -->
 
                     </div>
 
@@ -681,7 +760,36 @@
         <h4 class="text-center font-weight-bold pb-3">Schedule for Onsite Training</h4>
         <p class="text-center pb-3">The HNG internship is a 3-month remote internship designed to find and develop <br> the most talented software developers.</p>
 
-        <img class="img-fluid col-md-8 offset-md-2" src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570976432/startng/Group_67_okfzgc.png">
+
+        <table class="table table-hover table-bordered shadow p-3 mb-5 bg-white rounded a">
+            <thead>
+              <tr>
+                <th colspan="2" class="bgcolor">Monday - Friday <br> Current time zone available: UTC +1</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                  <td>8am - 9am</td>
+                  <th>Coding Challenges</th>
+              </tr>
+              <tr>
+                  <td>9am - 12pm</td>
+                  <th>Collaborative Learning</th>
+              </tr>
+              <tr>
+                    <td>12pm - 1pm</td>
+                    <th>Lunch Break</th>
+                </tr>
+                <tr>
+                    <td>1pm - 5pm</td>
+                    <th>Collaborative Learning</th>
+                </tr>
+                <tr>
+                    <td>5pm - 5:15pm</td>
+                    <th>Daily Stand-Up Meeting</th>
+                </tr>
+            </tbody>
+          </table>
     </div>
 
     <div class="container pt-5 pb-5">
@@ -699,7 +807,6 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <div class="container-fluid text-white deep mt-5">
         <footer>
             <div class="container">
@@ -752,7 +859,6 @@
         </footer>
     </div>
 
-    <!-- End of Footer -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
