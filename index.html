@@ -455,11 +455,11 @@
         <div class="overlay">
         <div class="row check">
           <div class="header">
-            <h3>Full Stack Development Curriculum</h3>
+            <h3 id="title">Full Stack Development Curriculum</h3>
           </div>
           <div class="flexy">
             <div class="desc">
-                <p>The HNG internship is a 3-month remote internship designed to find and develop tne most talented software developers</p>
+                <p>The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers</p>
             </div>
             <div  id="col" class="act-btn">
                 <a href="#" class="btn">Start Learning</a>
@@ -951,6 +951,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const title = document.querySelector('#title');
+        const tabs = document.querySelectorAll('.btn-outline-success');
+        const links = Array.from(tabs);
+
+        links.forEach(link => {
+          link.addEventListener('click', (e) => {
+            e.preventDefault();
+            let text = e.target.textContent;
+            if (text !== '>') {
+              title.textContent = text;
+            }
+          })
+        })
+      });
+    </script>
 </body>
 
 </html>
