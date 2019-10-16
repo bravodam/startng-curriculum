@@ -113,7 +113,7 @@
         .col-text a { color:  #44CF6C; font-weight: bold;}
 
         #text-center {
-          width: 60%;
+          /* width: 60%; */
           /* margin: 3% 20%; */
         }
 
@@ -252,8 +252,13 @@
        }
 
        .exp {
-         text-align: justify;
-        font-size: 20px;
+          text-align: justify;
+          font-size: 20px;
+       }
+
+       .exp {
+          text-align: justify;
+          font-size: 20px;
        }
 
        .check {
@@ -268,13 +273,21 @@
           padding: 1em;
        }
 
+       .desc p {
+          margin: 0.5rem;
+       }
+
        .act-btn {
          width: 30%;
-        padding-top: 0.8em;
+        padding-top: 1.8em;
        }
 
        .header {
          padding: 1em;
+       }
+
+       .header h3 {
+         margin: 1rem;
        }
 
        .pad {
@@ -308,15 +321,17 @@
        @media screen and (max-width: 500px) {
          .flexy {
            display: block;
-           padding: 1em;
+           padding: 0.8em;
          }
 
          .desc {
            width: 100%;
+           padding: 1em;
          }
 
          .act-btn {
            width: 70% !important;
+           padding: 2em;
          }
 
          .learn-btn-div {
@@ -328,6 +343,10 @@
          }
          .table {
            width: 100%;
+         }
+
+         .header h3 {
+           font-size: 1.55rem;
          }
        }
     </style>
@@ -410,28 +429,13 @@
                 <p>Brand...></p>
             </div>
         </div>
-<!--         <div class="container green-bg">
-          <div class="row">
-            <div class="col-md-12" style="margin-bottom: 0.5em">
-              <h4>Full Stack Development Curriculum</h4>
-            </div>
-            <div class="flexy">
-              <div class="col-md-8">
-                <p>The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers.</p>
-              </div>
-              <div class="col-md-4 learn-btn-div">
-                <input type="submit" id="learn-btn" value="Start Learning">
-              </div>
-            </div>
-          </div>
-        </div> -->
     </div>
 
     <div class="container pad" id="container-id">
        <div id="wrapper">
         <div class="overlay">
         <div class="row check">
-          <div class="header" style="width: 100%">
+          <div class="header">
             <h3>Full Stack Development Curriculum</h3>
           </div>
           <div class="flexy">
