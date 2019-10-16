@@ -11,201 +11,190 @@
     <title>Curriculum</title>
 
     <style>
-        body {
-            font-family: Nunito;
-        }
+        body { font-family: Nunito; }
         /* Style for Navbar Starts */
-        
-        .navbar-custom li a {
-            color: #000;
-        }
-        
+
+        .navbar-custom li a { color: #000; }
+
         .btn-success {
-            background-color: #2DCE89;
-            color: #fff;
-            border: thin solid #2dce89;
+            background-color: #2DCE89; color: #fff; border: thin solid #2dce89;
         }
-        
+
         .btn-success:hover {
-            background-color: #2DCE89;
-            color: #fff;
-            border: thin solid #2dce89;
+            background-color: #2DCE89; color: #fff; border: thin solid #2dce89;
         }
-        
+
         .custom-toggler .navbar-toggler-icon {
             background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
         }
-        
-        .custom-toggler.navbar-toggler {
-            border-color: #000;
-        }
+
+        .custom-toggler.navbar-toggler { border-color: #000; }
         /* Style for Navbar Ends */
         /* Style for Footer Starts */
-        
+
         * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Nunito', sans-serif;
+            box-sizing: border-box; margin: 0; padding: 0; box-sizing: border-box; font-family: 'Nunito', sans-serif;
         }
-        
-        a {
-            text-decoration: none;
-        }
-        
-        .deep {
-            background: #3A0842;
-            color: #fff;
-        }
-        
-        .deep #slink {
-            background: #44CF6C;
-            border-radius: 10px;
-            color: white;
-            padding: 10px 70px;
-        }
-        
+
+        a { text-decoration: none;}
+
+        .deep { background: #3A0842; color: #fff; }
+
+        .deep #slink { background: #44CF6C; border-radius: 10px; color: white; padding: 10px 70px; }
+
         .deep li a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 16px;
-            line-height: 30px;
+            text-decoration: none; color: #fff; font-size: 16px; line-height: 30px;
         }
-        
-        .deep li {
-            list-style: none;
-        }
-        
-        .deep li a:hover {
-            text-decoration: none;
-        }
-        
-        a:hover {
-            text-decoration: none;
-        }
-        
+
+        .deep li { list-style: none; }
+
+        .deep li a:hover { text-decoration: none; }
+
+        a:hover { text-decoration: none; }
+
         .icons i {
-            font-size: 26px;
-            height: 50px;
-            width: 50px;
-            padding: 10px 20px;
-            color: white;
+            font-size: 26px; height: 50px; width: 50px; padding: 10px 20px; color: white;
         }
-        
-        .icons i.fa.fa-twitter:hover {
-            color: #00aced;
-        }
-        
-        .icons i.fa.fa-facebook:hover {
-            color: #3b5598;
-        }
-        
-        .icons i.fa.fa-instagram:hover {
-            color: #ed3833;
-        }
+
+        .icons i.fa.fa-twitter:hover { color: #00aced; }
+
+        .icons i.fa.fa-facebook:hover { color: #3b5598; }
+
+        .icons i.fa.fa-instagram:hover { color: #ed3833; }
         /* Style for Footer Ends */
-        
+
         .body-banner {
             background-image: url('https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570925063/startng/Group_414_xmbnpz.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center center;
         }
-        
+
+        #wrapper { 
+            background-image: url('https://res.cloudinary.com/obinna93/image/upload/v1571211941/Rectangle24_s77svh.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 97%;
+            margin: -4% auto;
+
+        }
+
+        #wrapper-1 { width: 82%; }
+
+        #top h4 { font-size: 40px;}
+
+        .overlay { background: rgba(7, 101, 34, 0.82); }
+
+        .col-md-8 { padding-left: 5%;}
+
+        #wrapper div { margin: 4% auto; }
+
+        #wrapper div:nth-child(1) { color: whitesmoke; }
+
+        #col a{
+            width: 170px; color: #44CF6C; margin-left: 78px; margin-top: 35px; background: #FFFFFF; border-radius: 8px;
+        }
+
+        .col-text { padding-left: 15px; padding-right: 50px; }
+        .col-text p { margin: 13% 0;  }
+        .col-text a { color:  #44CF6C; font-weight: bold;}
+
+        #text-center { width: 60%; margin: 3% 20%;}
+
+        @media screen and (max-width: 768px) {
+            #wrapper-1 { width: 88%; }
+            #wrapper-1 div { display: flex; flex-direction: row; width: 97%;}
+            #wrapper { width: 94%; margin: -30px auto;}
+            #col a { margin-left: 20px; margin-top: 75px; width: 140px; }
+            .col-text p { margin: 4% 0; }
+            .col-text h4 { font-size: 19px;}
+            .col-text a { font-size: 15px;}
+            .col-text { width: 50%;}
+            .align-items-center { width: 95%; margin: 0 auto;}
+            .align-items-center div img { width: 300px; margin: 0 auto;}
+            #text-center { width: 80%; margin: 3% auto;}
+
+        }
+
+        @media screen and (max-width: 414px) {
+            .align-items-center div img { width: 80%; margin: 0 10%;}
+            .align-items-center { width: 95%; margin: -12% auto;}
+            .col-text { width: 100%; margin-top: 2%; padding-left: 45px; margin-right: -20px; }
+            .col-text p { font-size: 14px; text-align: justify; }
+            .col-text h4 { font-size: 14px; word-spacing: 0.2em;}
+
+            #wrapper-1 { width: 100%; margin: -6% auto; }
+            #wrapper-1 h4 { font-size: 18px;}
+            #text-center  { font-size: 14px; text-align: justify; width: 100%;}
+            #row-div div p { font-size: 13px;}
+
+            .col-md-8 h3 { font-size: 19px; font-weight: 600; text-align: center;}
+            .col-md-8 p { font-size: 14px; text-align: center; padding: 2% 0;}
+            #col { width: 50%; margin: 40px 25%; }
+            #col a { width: 145px; margin: 10px auto; }
+            #container-id {  min-height: 90vh; max-height: 100vh; }
+
+            #row-div div { justify-content: center;}
+            #row-div {width: 100%; margin: 4% auto;}
+
+            #text-center { width: 95%; margin: 3% auto;}
+
+            #pb-5 { margin-top: -425px; margin-bottom: -60px;  }
+        }
+
         .accordion .card-header:after {
             font-family: 'FontAwesome';
             content: "\f068";
             float: right;
         }
-        
+
         .accordion .card-header.collapsed:after {
             /* symbol for "collapsed" panels */
             content: "\f067";
         }
-        
-        .panel-group .panel {
-            /* border-radius: 5px; */
-            /* border-color: #DBCCD9; */
-            padding: 0;
-        }
-        
+
+        .panel-group .panel { padding: 0;}
+
         .panel-default>.panel-heading {
             color: #000;
             font-size: 25px;
             font-weight: bold;
             background-color: #DBCCD9;
-            /* border-color: #DBCCD9; */
         }
-        
-        .panel-default {
-            margin-bottom: 30px;
-        }
-        
-        .panel-title {
-            font-size: 25px;
-            background: #DBCCD9;
-        }
-        
-        .panel-title>a {
-            display: block;
-            padding: 15px;
-            text-decoration: none;
-            color: #000;
-        }
-        
-        .short-full {
-            float: right;
-            color: #fff;
-        }
-        
-        .panel-default>.panel-heading+.panel-collapse>.panel-body {
-            /* border: solid 1px #EEEEEE; */
-            /* background: rgba(129, 22, 124, 0.05); */
-        }
-        
-        .course-acc {
-            background: rgba(129, 22, 124, 0.05);
-        }
-        
+
+        .panel-default { margin-bottom: 30px; }
+
+        .panel-title { font-size: 25px; background: #DBCCD9; }
+
+        .panel-title>a { display: block; padding: 15px;  text-decoration: none; color: #000; }
+
+        .short-full { float: right; color: #fff; }
+
+
+        .course-acc { background: rgba(129, 22, 124, 0.05); }
+
         .panel-group .panel {
             border: none;
-            -webkit-box-shadow: none;
+            /* -webkit-box-shadow: none; */
         }
-        
+
         .exp-tt {
-            font-size: 16px;
-            padding-top: 60px;
-            padding-bottom: 30px;
+            font-size: 16px; padding-top: 60px; padding-bottom: 30px;
         }
-        
-        h3 .text-center {
-            font-size: 25px;
-        }
-        
-        .panel-tt {
-            margin: 20px 0 40px 0;
-            font-weight: bold;
-        }
-        
-        .panel-title {
-            font-weight: bold;
-        }
-        
-        .panel-body ul {
-            padding-inline-start: 10px;
-        }
-        
+
+        h3 .text-center { font-size: 25px; }
+
+        .panel-tt { margin: 20px 0 40px 0; font-weight: bold; }
+
+        .panel-title { font-weight: bold; }
+
+        .panel-body ul { padding-inline-start: 10px; }
+
         .panel-body li {
-            list-style-type: none;
-            padding: 7px 0;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-            font-size: 16px;
+            list-style-type: none; padding: 7px 0; border-bottom: 1px solid rgba(0, 0, 0, 0.2); font-size: 16px;
         }
-        
-        .course-drop {
-            padding-bottom: 40px;
-        }
+
+        .course-drop { padding-bottom: 40px; }
     </style>
 </head>
 
@@ -240,8 +229,8 @@
     </nav>
 
     <div class="container-fluid body-banner pt-5 pb-5">
-        <div class="col-md-6 offset-md-1 text-white ">
-            <h4 class="font-weight-bold mt-5 pt-5 pb-4" style="font-size: 40px;">Upgrade Your Skills with <br> Our Curriculum</h4>
+        <div class="col-md-6 offset-md-1 text-white " id="top">
+            <h4 class="font-weight-bold mt-5 pt-5 pb-4">Upgrade Your Skills with <br> Our Curriculum</h4>
             <p class="pb-4" style="font-size: 20px;">The HNG internship is a 3-month remote <br> internship designed ---to find and develop the <br> most talented software developers. </p>
             <a class="btn btn-success pl-5 pr-5 mb-4" href="register.html" style="background-color:#44CF6C; color: #fff; border-color: #44CF6C;">Start
                 Learning</a>
@@ -250,20 +239,23 @@
 
     <div class="container mt-5 mb-5 pt-5 pb-5">
         <div class="row align-items-center">
-            <div class="col-md-6">
+            <div class="col-md-7">
                 <img class="img-fluid" src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570975785/startng/image_2_nbexxk.png">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-5 col-text">
                 <h4 class="font-weight-bold">Learn Anywhere, Anytime, With Other Creatives</h4>
-                <p>The HNG internship is a 3-month remote <br> internship designed to find and develop the <br> most talented software developers. Everyone is <br> welcome to participate (there is no entrance <br> exam). </p>
+                <p>The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers. Everyone is welcome to participate (there is no entrance <br> exam). </p>
+                <a href="#">Learn more >></a>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container" id="wrapper-1">
         <h4 class="text-center font-weight-bold">World Class Curriculums Just for You</h4>
-        <p class="text-center">The HNG internship is a 3-month remote internship designed to find and develop <br> the most talented software developers.</p>
-        <div class="row">
+        <p class="text-center" id="text-center">
+            The HNG internship is a 3-month remote internship designed to find and develop the most talented software developers.
+        </p>
+        <div class="row" id="row-div">
             <div class="col-md-3">
                 <p class="font-weight-bold">Full Stack Development</p>
             </div>
@@ -282,17 +274,29 @@
         </div>
     </div>
 
-    <div class="container">
-        <img src="https://res.cloudinary.com/sgnolebagabriel/image/upload/v1570976167/startng/Group_426_efmmy6.png" class="img-fluid">
+    <div class="container" id="container-id">
+       <div id="wrapper">
+        <div class="overlay">
+        <div class="row">
+            <div class="col-md-8">
+                <h3>Full Stack Development Curriculum</h3>
+                <p>The HNG internship is a 3-month remote internship designed to find and develop tne most talented software developers</p>
+            </div>
+            <div class="col-md-4" id="col">
+                <a href="#" class="btn">Start Learning</a>
+            </div>
+        </div>
+       </div>
+       </div>
     </div>
 
-    <div class="container  pb-5">
+    <div class="container  pb-5" id="pb-5" >
 
-        <div class="course-acc pt-5" style="background:rgba(129, 22, 124, 0.05);">
+        <div class="course-acc pt-5" style="background: white !important;">
             <div class="container course-drop">
 
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-6" >
                         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 
                             <div class="panel panel-default">
