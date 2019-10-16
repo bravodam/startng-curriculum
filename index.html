@@ -57,7 +57,7 @@
         a:hover { text-decoration: none; }
 
         .icons i {
-            font-size: 26px; height: 50px; width: 50px; padding: 10px 20px; color: white;        
+            font-size: 26px; height: 50px; width: 50px; padding: 10px 20px; color: white;
         }
 
         .icons i.fa.fa-twitter:hover {
@@ -86,12 +86,8 @@
             background-position: center center;
         }
 
-        #wrapper { 
+        #wrapper {
             background-image: url('https://res.cloudinary.com/obinna93/image/upload/v1571211941/Rectangle24_s77svh.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            width: 97%;
-            margin: -4% auto;
 
         }
 
@@ -103,59 +99,22 @@
 
         .col-md-8 { padding-left: 5%;}
 
-        #wrapper div { margin: 4% auto; }
-
         #wrapper div:nth-child(1) { color: whitesmoke; }
 
         #col a{
-            width: 170px; color: #44CF6C; margin-left: 78px; margin-top: 35px; background: #FFFFFF; border-radius: 8px;
+            width: 80%;
+            color: #44CF6C;
+            background: #FFFFFF;
+            border-radius: 8px;
         }
 
-        .col-text { padding-left: 15px; padding-right: 50px; }
-        .col-text p { margin: 13% 0;  }
+        /* .col-text { padding-left: 15px; padding-right: 50px; } */
+        /* .col-text p { margin: 13% 0;  } */
         .col-text a { color:  #44CF6C; font-weight: bold;}
 
-        #text-center { width: 60%; margin: 3% 20%;}
-
-        @media screen and (max-width: 768px) {
-            #wrapper-1 { width: 88%; }
-            #wrapper-1 div { display: flex; flex-direction: row; width: 97%;}
-            #wrapper { width: 94%; margin: -30px auto;}
-            #col a { margin-left: 20px; margin-top: 75px; width: 140px; }
-            .col-text p { margin: 4% 0; }
-            .col-text h4 { font-size: 19px;}
-            .col-text a { font-size: 15px;}
-            .col-text { width: 50%;}
-            .align-items-center { width: 95%; margin: 0 auto;}
-            .align-items-center div img { width: 300px; margin: 0 auto;}
-            #text-center { width: 80%; margin: 3% auto;}
-
-        }
-
-        @media screen and (max-width: 414px) {
-            .align-items-center div img { width: 80%; margin: 0 10%;}
-            .align-items-center { width: 95%; margin: -12% auto;}
-            .col-text { width: 100%; margin-top: 2%; padding-left: 45px; margin-right: -20px; }
-            .col-text p { font-size: 14px; text-align: justify; }
-            .col-text h4 { font-size: 14px; word-spacing: 0.2em;}
-
-            #wrapper-1 { width: 100%; margin: -6% auto; }
-            #wrapper-1 h4 { font-size: 18px;}
-            #text-center  { font-size: 14px; text-align: justify; width: 100%;}
-            #row-div div p { font-size: 13px;}
-
-            .col-md-8 h3 { font-size: 19px; font-weight: 600; text-align: center;}
-            .col-md-8 p { font-size: 14px; text-align: center; padding: 2% 0;}
-            #col { width: 50%; margin: 40px 25%; }
-            #col a { width: 145px; margin: 10px auto; }
-            #container-id {  min-height: 90vh; max-height: 100vh; }
-
-            #row-div div { justify-content: center;}
-            #row-div {width: 100%; margin: 4% auto;}
-
-            #text-center { width: 95%; margin: 3% auto;}
-
-            #pb-5 { margin-top: -425px; margin-bottom: -60px;  }
+        #text-center {
+          width: 60%;
+          /* margin: 3% 20%; */
         }
 
         .accordion .card-header:after {
@@ -265,6 +224,7 @@
        .flexy {
         display: flex;
         justify-content:space-between;
+        margin: 0 !important;
        }
 
        .learn-btn-div {
@@ -296,6 +256,37 @@
         font-size: 20px;
        }
 
+       .check {
+         /* text-align: left !important; */
+         display: flex;
+         justify-content: space-between;
+         margin-top: 0em !important;
+       }
+
+       .desc {
+          width: 60%;
+          padding: 1em;
+       }
+
+       .act-btn {
+         width: 30%;
+        padding-top: 0.8em;
+       }
+
+       .header {
+         padding: 1em;
+       }
+
+       .pad {
+         padding: 1em;
+       }
+
+       @media screen and (min-width: 1000px) {
+         .flexy {
+           margin-top: 0px !important;
+         }
+       }
+
        @media screen and (max-width: 768px) {
          .learn-btn-div {
            text-align: center;
@@ -317,6 +308,15 @@
        @media screen and (max-width: 500px) {
          .flexy {
            display: block;
+           padding: 1em;
+         }
+
+         .desc {
+           width: 100%;
+         }
+
+         .act-btn {
+           width: 70% !important;
          }
 
          .learn-btn-div {
@@ -427,17 +427,21 @@
         </div> -->
     </div>
 
-    <div class="container" id="container-id">
+    <div class="container pad" id="container-id">
        <div id="wrapper">
         <div class="overlay">
-        <div class="row">
-            <div class="col-md-8">
-                <h3>Full Stack Development Curriculum</h3>
+        <div class="row check">
+          <div class="header" style="width: 100%">
+            <h3>Full Stack Development Curriculum</h3>
+          </div>
+          <div class="flexy">
+            <div class="desc">
                 <p>The HNG internship is a 3-month remote internship designed to find and develop tne most talented software developers</p>
             </div>
-            <div class="col-md-4" id="col">
+            <div  id="col" class="act-btn">
                 <a href="#" class="btn">Start Learning</a>
             </div>
+          </div>
         </div>
        </div>
        </div>
