@@ -304,8 +304,9 @@
        }
 
         .active, .btn-outline-success:hover {
-  background-color: #44CF6C;
-  color: white;
+          background-color: #44CF6C;
+          color: white;
+        }
 
        @media screen and (min-width: 1000px) {
          .flexy {
@@ -914,16 +915,16 @@
       });
     </script>
     <script>
-// Add active class to the current button (highlight it)
-var header = document.getElementById("row-div");
-var btns = header.getElementsByClassName("btn btn-outline-success");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function() {
-  var current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
-  this.className += " active";
-  });
-}
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("row-div");
+  var btns = header.getElementsByClassName("btn btn-outline-success");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+  }
 </script>
 
 </body>
