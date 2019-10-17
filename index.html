@@ -302,6 +302,10 @@
          font-size: 20px;
          margin: auto;
        }
+        
+        .active, .btn-outline-success:hover {
+  background-color: #44CF6C;
+  color: white;
 
        @media screen and (min-width: 1000px) {
          .flexy {
@@ -423,17 +427,17 @@
         </p>
         <div class="row" id="row-div">
             <div class="col-md-3">
-                <a role="button" href="#" class="btn btn-outline-success" style="color: #000">Full Stack Development</a>
+                <a role="button" href="#" class="btn btn-outline-success active">Full Stack Development</a>
 
 
                </div>
-            <br>
+         
             <div class="col-md-3">
 
              <a role="button" href="#" class="btn btn-outline-success">Mobile App Development</a>
 
             </div>
-            <br>
+          
             <div class="col-md-2">
                  <a role="button" href="#" class="btn btn-outline-success">Artificial Intelligence</a>
             </div>
@@ -969,6 +973,19 @@
         })
       });
     </script>
+    <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("row-div");
+var btns = header.getElementsByClassName("btn btn-outline-success");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+</script>
+    
 </body>
 
 </html>
